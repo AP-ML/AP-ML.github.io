@@ -1,30 +1,618 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>AP</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hello</h1>
-				<p>AP info 1 <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:1@1.com">email</a></li>
-        		<li><a href="https://github.com/AP-ML">github.com/AP-ML</a></li>
-			</ul>
-		</footer>
-	</body>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>AP-ML</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/vendor.min.css">
+   <link rel="stylesheet" href="css/main.css">     
+
+   <!-- script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+
+</head>
+
+<body>
+
+	<!-- header
+   ================================================== -->
+   <header id="main-header">
+
+   	<div class="row">
+
+	      <div class="logo">
+	         <a href="index.html">AP-ML</a>
+	      </div>
+
+	      <nav id="nav-wrap">         
+	         
+	         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">
+	         	<span class="menu-icon">Menu</span>
+	         </a>
+         	<a class="mobile-btn" href="#" title="Hide navigation">
+         		<span class="menu-icon">Menu</span>
+         	</a>            
+
+	         <ul id="nav" class="nav">
+	            <li><a class="smoothscroll" href="#hero">Home</a></li>
+		         <li class="current"><a class="smoothscroll" href="#portfolio">Travel</a></li>
+	            <li><a class="smoothscroll" href="#services">Categories</a></li>
+	            <li><a class="smoothscroll" href="#about">About</a></li>
+	            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+	         </ul> <!-- end #nav -->
+
+	      </nav> <!-- end #nav-wrap -->
+
+	     <!-- <ul class="header-social">
+	        	<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+	        	<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+	        	<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+	      </ul>   -->   
+
+	   </div>
+
+   </header> <!-- end header -->
+
+
+   <!-- homepage hero
+   ================================================== -->
+   <section id="hero">	
+   	  
+		<div class="row hero-content">
+
+			<div class="twelve columns hero-container">
+
+			   <!-- hero-slider start-->
+			   <div id="hero-slider" class="flexslider">
+
+				   <ul class="slides">
+
+					   <!-- slide -->
+					   <li>
+						   <div class="flex-caption">
+								<h1 class="">Welcome to <span>My Website</span>. All of this is currently filler.
+								</h1>	
+									
+								<h3 class="">filler</h3>				   
+							</div>						
+					   </li>
+
+					   <!-- slide -->
+					   <li>						
+							<div class="flex-caption">
+								<h1 class="">Thats's right, more filler</h1>
+
+								<h3 class="">filler</h3>			   
+							</div>					
+					   </li>
+
+					   <!-- slide -->
+					   <li>
+						   <div class="flex-caption">
+								<h1 class="">Take a look at some of my<a class="smoothscroll" href="#portfolio" title="portfolio" >Travels</a> or 
+								<a class="smoothscroll" href="#about" title="about">filler</a> content</h1>
+
+								<h3 class="">filler</h3>			   
+							</div>
+					   </li>					              
+
+				   </ul>
+
+			   </div> <!-- end hero-slider -->				   
+
+	      </div> <!-- end twelve columns-->
+
+		</div> <!-- end row -->	
+
+		<div id="more">
+		      <a class="smoothscroll" href="#services">More Info<i class="fa fa-angle-down"></i></a>
+		</div> 	
+
+   </section> <!-- end homepage hero -->
+
+
+   <!-- portfolio
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row section-head">
+
+      	<div class="twelve columns">
+
+      		<h1>My Latest Trips<span>.</span></h1>
+
+	         <hr />               
+
+	         <p>Travel Photos
+	         </p>
+
+	      </div>
+
+      </div> <!-- end section-head -->
+
+      <div class="row items">
+
+         <!-- portfolio-wrapper -->
+         <div id="portfolio-wrapper" class="bgrid-fourth s-bgrid-third tab-bgrid-half">
+
+            <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-01">
+	                  <img src="images/portfolio/hagia-sophia.jpg" alt="Hagia Sophia">
+                     <div class="overlay"></div>                       
+                     <div class="portfolio-item-meta">
+     					      <h5>Hagia Sophia</h5>
+                        <p>Istanbul</p>
+     					   </div> 
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+        		</div> <!-- item end -->
+
+          <!--  <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-02">
+                     <img src="images/portfolio/hotel.jpg" alt="Hotel Sign">
+                     <div class="overlay">
+                      <div class="portfolio-item-meta">
+          					   <h5>Hotel Sign</h5>
+                           <p>Branding</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+         <!--   <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-03">
+                     <img src="images/portfolio/beetle.jpg" alt="Beetle">                        
+                     <div class="overlay">
+                      <div class="portfolio-item-meta">
+          					   <h5>Beetle</h5>
+                           <p>Webdesign</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+          <!--  <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-04">
+                     <img src="images/portfolio/banjo-player.jpg" alt="Banjo Player">
+                     <div class="overlay">
+                      <div class="portfolio-item-meta">
+          					   <h5>Banjo Player</h5>
+                           <p>Photography</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+         <!--   <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-05">
+                   <img src="images/portfolio/lighthouse.jpg" alt="Lighthouse">
+                     <div class="overlay">
+                      <div class="portfolio-item-meta">
+          					   <h5>Lighthouse</h5>
+                           <p>Web Development</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+         <!--   <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-06">
+                     <img src="images/portfolio/girl.jpg" alt="Girl Stuff">
+                     <div class="overlay">
+                      <div class="portfolio-item-meta">
+          					   <h5>Girl Stuff</h5>
+                           <p>Photography</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+        <!--    <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-07">                        
+                     <img src="images/portfolio/coffee.jpg" alt="Coffee Cup">                       
+                     <div class="overlay">
+                      <div class="portfolio-item-meta">
+          					   <h5>Coffee Cup</h5>
+                           <p>Branding</p>
+          					</div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>
+                  </a>
+               </div>
+         	</div> <!-- item end -->
+
+         <!--   <div class="bgrid folio-item">
+               <div class="item-wrap">
+                  <a href="#modal-08">
+                     <img src="images/portfolio/judah.jpg" alt="Judah">
+                     <div class="overlay">
+                      	<div class="portfolio-item-meta">
+        					      <h5>Judah</h5>
+                           <p>Webdesign</p>
+        					   </div>
+                     </div>
+                     <div class="link-icon"><i class="fa fa-plus"></i></div>                     
+                  </a>
+               </div>
+       		</div>  <!-- item end -->
+
+         </div> <!-- end portfolio-wrapper -->
+         
+
+         <!-- modal popup
+	   	========================================================= -->
+         <div id="modal-01" class="popup-modal mfp-hide">
+
+		      <div class="media">
+	      		<img src="images/portfolio/modals/m-hagia-sophia.jpg" alt="Hagia Sophia" />
+	      	</div>
+
+		      <div class="description-box">
+			      <h4>Hagia Sophia</h4>
+			      <p>Istanbul, Turkey</p>
+               <span class="categories">Travel</span>
+		      </div>
+
+            <div class="link-box group">
+            	<a href="http://google.com">Details</a>
+            	<a href="#" class="popup-modal-dismiss">Close</a>         
+            </div>
+
+	      </div><!-- modal-01 end -->
+
+      </div>  <!-- end row -->
+
+   </section> <!-- end portfolio -->
+
+
+   <!-- Services Section
+   ================================================== -->
+   <section id="services">
+
+   	<div class="row section-head">
+
+      	<div class="twelve columns">
+
+      		<h1>Filler Title<span>.</span></h1>
+
+	         <hr />      	         
+
+	         <p>Sorry, there is yet more filler.
+	         </p>
+
+	      </div>
+
+      </div> <!-- end section-head -->
+
+      <div class="row mobile-no-padding">      	
+
+	      <div class="service-list bgrid-third s-bgrid-half tab-bgrid-whole group">
+
+	      	<div class="bgrid">	               
+
+	            <h3>Filler</h3>
+
+	            <div class="service-content">	                  
+		            <p>I Should probably write something here.
+	         		</p> 
+	         	</div>  
+
+				</div> <!-- end bgrid -->
+
+				<div class="bgrid">	              
+
+	            <h3>Filler</h3>                  
+
+	            <div class="service-content">	                  
+		            <p>Maybe something here too...
+	         		</p> 
+	            </div>	              
+
+			   </div> <!-- end bgrid -->
+
+			   <div class="bgrid">	              
+
+	            <h3>Filler</h3>
+
+	            <div class="service-content">		                  
+		            <p>Filler
+	        			</p> 
+	            </div> 	               
+
+			   </div> <!-- end bgrid -->
+
+				<div class="bgrid">	              
+	                  
+	            <h3>Filler</h3> 
+
+	            <div class="service-content">	                  
+		            <p>Fill
+	         		</p> 
+	            </div>                
+
+				</div> <!-- end bgrid -->
+
+			   <div class="bgrid">
+
+	            <h3>Filler</h3>
+
+	            <div class="service-content">	                  
+		            <p>Words...
+	        			</p> 
+	            </div>	               
+
+			   </div> <!-- end bgrid -->
+
+			   <div class="bgrid">	               
+
+	            <h3>Filler</h3>
+
+	            <div class="service-content">
+		            <p>More words.filler
+	        			</p> 
+	            </div>	               
+
+			   </div> <!-- end bgrid -->
+
+	      </div> <!-- end service-list -->	      
+
+      </div> <!-- end row -->      
+
+   </section> <!-- end services -->
+
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+   	<div class="row section-head">
+
+      	<div class="twelve columns">
+
+      		<h1>About Me<span>.</span></h1>
+
+	         <hr />     	    
+
+	         <p>Do we really need a section about myself?
+	         </p>
+
+	      </div> <!-- end section-head -->
+
+      </div>
+
+      <div class="row mobile-no-padding">       	
+
+      	<div class="process bgrid-half tab-bgrid-whole group">
+
+      		<div class="bgrid">
+
+			      <h3>Fill</h3>	
+
+			      <p>Blank
+			      </p>
+
+		   	</div>
+
+      		<div class="bgrid">
+
+			     	<h3>More Fill</h3>
+
+			     	<p>Blanker
+			   	</p>	
+
+		      </div> 
+
+		      <div class="bgrid">
+
+			     	<h3>Deep Fill</h3>	
+
+			     	<p>Blankest
+			      </p>
+
+		      </div>
+
+		      <div class="bgrid">
+
+			      <h3>Partial Fill</h3>
+
+			      <p>Somewhat Blank
+			      </p>	
+
+		      </div>
+
+      	</div> <!-- end process -->      	
+
+     	</div> <!-- end row -->	           
+
+   </section> <!-- end about -->  
+
+
+  <!-- Testimonials Section
+   ================================================== -->
+
+
+   <!-- contact
+   ================================================== -->
+   <section id="contact">
+
+   	<div class="row section-head">
+
+   		<div class="twelve columns">
+
+	         <h1>Contact Me<span>.</span></h1>
+
+	         <hr />	        
+
+	      </div>
+
+      </div> <!-- end section-head -->
+
+      <div class="row">
+      	
+      	<div id="contact-form" class="six columns tab-whole left">
+
+            <!-- form -->
+            <form name="contactForm" id="contactForm" method="post" action=""  >
+      			<fieldset>
+
+                  <div class="group">
+ 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minLength="2" required />
+                  </div>
+                  <div>
+	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required />
+	               </div>
+                  <div>
+	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject"  value="" />
+	               </div>                       
+                  <div>
+	                 	<textarea name="contactMessage"  id="contactMessage" placeholder="message" rows="10" cols="50" required ></textarea>
+	               </div>                      
+                  <div>
+                     <button class="submitform">Submit</button>
+                     <div id="submit-loader">
+                        <div class="text-loader">Sending...</div>                             
+       				      <div class="s-loader">
+								  	<div class="bounce1"></div>
+								  	<div class="bounce2"></div>
+								  	<div class="bounce3"></div>
+								</div>
+							</div>
+                  </div>
+
+      			</fieldset>
+      		</form> <!-- Form End -->
+
+            <!-- contact-warning -->
+            <div id="message-warning"></div>
+            <!-- contact-success -->
+      		<div id="message-success">
+               <i class="icon-ok"></i>Your message was sent, thank you!<br />
+      		</div>
+
+         </div>
+
+         <div class="six columns tab-whole right">
+
+            <p class="lead">If you have any questions, please contact me.
+
+	     <!--    <h3 class="address">Visit</h3>
+
+	         <p>
+            1<br>
+            2<br>
+            3
+            </p>
+
+            <h3>Contact Number</h3>
+			   <p>Phone: (000) 555 1212<br>
+			   	Mobile: (000) 555 0100<br>
+			     	Fax: (000) 555 0101
+			   </p> -->
+               	
+         </div>     	
+
+      </div> <!-- end row -->     
+
+   </section>  <!-- end contact -->
+
+
+   <!-- Footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">  
+
+      	<div class="twelve columns content group">
+      		
+				<ul class="social-links">
+               <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+               <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+               <li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>               
+               <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+               <li><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
+               <li><a href="#"><i class="fa fa-flickr"></i></a></li>               
+               <li><a href="#"><i class="fa fa-skype"></i></a></li>
+            </ul>
+
+            <hr />
+
+            <div class="info">
+
+            	<div class="footer-logo"></div>
+
+	            <p>This website is still heavily under construction, as you can see...
+	            </p>	        
+
+	         </div>
+
+      	</div>           
+
+         <ul class="copyright">
+         	<li>&copy; Copyright 2015 AP-Studios.</li> 
+         	<li>Design by <a href="http://www.styleshout.com/">Styleshout.</a>.</li>
+         </ul>
+
+         <div id="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#hero">Back to Top<i class="fa fa-angle-up"></i></a>
+         </div>
+
+      </div> <!-- end row -->
+
+   </footer> <!-- end footer -->
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-1.11.3.min.js"></script>
+   <script src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="js/jquery.flexslider-min.js"></script>
+   <script src="js/jquery.waypoints.min.js"></script>
+   <script src="js/jquery.validate.min.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/jquery.placeholder.min.js"></script>
+   <script src="js/jquery.magnific-popup.min.js"></script>  
+   <script src="js/main.js"></script>
+
+</body>
+
 </html>
